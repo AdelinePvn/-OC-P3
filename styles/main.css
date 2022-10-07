@@ -1,5 +1,87 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-body{
-    font-family: 'Raleway', sans-serif;
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+.bg-gray {
+  background-color: #f2f2f2;
+}
+
+form {
+  display: flex;
+  align-items: center;
+}
+
+form input {
+  font-size: large;
+  height: 49px;
+  border: none;
+  border-top: 1px solid #f2f2f2;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+form i.fa-location-dot {
+  font-size: 18px;
+  background-color: #f2f2f2;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 16px 18px 15px 18px;
+}
+
+form p {
+  color: white;
+  font-weight: 800;
+  padding: 16px 18px 14px 18px;
+  background-color: #0065fc;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.bloc {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+}
+.bloc .hebergement {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border-radius: 10px;
+}
+
+.bloc .hebergement .card {
+  width: calc((100% / 3) - 30px);
+  margin: 10px auto;
+}
+
+.bloc .populaire {
+  border-radius: 10px;
+}
+
+article {
+  margin-right: 10px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 20px;
+  padding: 5px;
+}
+.card-cote {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+i.fa-solid {
+  color: #0065fc;
+}
+i.fa-regular {
+  color: #f2f2f2;
 }
