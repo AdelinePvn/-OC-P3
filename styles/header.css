@@ -1,11 +1,49 @@
-h1{
-    color: #0065FC ;
+#logo{
+    height: 19px;
+    width: 61px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin: 44px 0px 44px 0px;
+    height: 100%;
 }
 
 a{
-color: black;
+    color: black;
+    text-decoration: none;
+    height: 19px;
 }
 
 a:hover{
     color: #0065FC;
 }
+
+#activite{
+    margin-left: 67px;
+}
+
+.menu{
+    height: 100%;
+}
+
+.menu a{
+    position: relative;
+    padding: 0px 25px;
+}
+
+.menu a::after{
+    content: '';
+    border-top: 2px solid transparent;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: -44px;
+    transition: border-color .3s;
+}
+
+.menu a.active::after, .menu a:hover::after{
+    border-color: #0065FC;
+}
+
