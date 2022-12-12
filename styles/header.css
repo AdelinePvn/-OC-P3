@@ -47,3 +47,46 @@ a:hover{
     border-color: #0065FC;
 }
 
+
+@media screen  and (max-width:768px) /*mobile*/ {
+
+    header{
+        display: flex;
+    }
+
+    
+    .header{
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        width: 100%;
+    }
+    
+    #logo{
+        margin: 0 auto;
+        padding: 21px 157px;
+    }
+
+    .menu{
+        margin-top: 28px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .menu a{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .menu a::after{
+        top: 24px;
+        border-color: #f2f2f2;
+    }
+
+    #activite{
+        margin: 0;
+    }
+
+}

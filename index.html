@@ -2,6 +2,7 @@
 <html lang="fr">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Booki</title>
     <link rel="stylesheet" href="styles/header.css" />
     <link rel="stylesheet" href="styles/main.css" />
@@ -23,7 +24,7 @@
       <div class="header">
       <img src="./Images_Booki/logo/Booki.png" id="logo" alt="logo du site booki">
         <div class="menu">
-        <a href="#">Hébergement</a>
+        <a href="#" >Hébergement</a>
         <a href="#" id="activite">Activités</a>
         </div>
       </div>
@@ -36,14 +37,17 @@
         <i class="fa-solid fa-location-dot "></i>
         <input type="search" name="searchbar" value="Marseille, France" aria-label="search" />
         <p>Rechercher</p>
+        <p id="icon"><i class="fa-solid fa-magnifying-glass"></i></p>
       </form>
 
       <div class="filter">
         <h3>Filtres</h3>
-        <div class="bouton economique"><i class="fa-solid fa-money-bill-wave"></i>Économique</div>
-        <div class="bouton famille"><i class="fa-solid fa-person"></i>Familial</div>
-        <div class="bouton romantique"><i class="fa-solid fa-heart"></i>Romantique</div>
-        <div class="bouton animaux"><i class="fa-solid fa-dog"></i>Animaux autorisés</div>
+        <div id="boutons-filtre">
+          <div class="bouton economique"><i class="fa-solid fa-money-bill-wave"></i>Économique</div>
+          <div class="bouton famille"><i class="fa-solid fa-person"></i>Familial</div>
+          <div class="bouton romantique"><i class="fa-solid fa-heart"></i>Romantique</div>
+          <div class="bouton animaux"><i class="fa-solid fa-dog"></i>Animaux autorisés</div>
+        </div>
       </div>
 
       <div class="info">
@@ -54,7 +58,7 @@
       
         <!-- les hebergements -->
 
-      <div class="bloc">
+      <div class="bloc mobile-no-margin">
         <section id="card">
           <div class="hebergement bg-gray">
           <h3>Hébergements à Marseille</h3>

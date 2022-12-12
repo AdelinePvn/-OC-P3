@@ -29,3 +29,13 @@
     gap: 82px;
   }
   }
+
+  
+@media screen  and (max-width:768px) /*Mobile*/
+{
+ .footer {
+    gap: 28px; /*40-12*/
+    flex-direction: column;
+    margin-left: -10px;
+  }
+  }

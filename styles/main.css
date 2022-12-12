@@ -51,6 +51,10 @@ form p {
   border-radius: 0px 15px 15px 0px;
 }
 
+form p#icon{
+  display: none;
+}
+
 .filter{
   margin: 20px auto; 
   display: flex;
@@ -59,6 +63,10 @@ form p {
 
 .filter h3{
   margin: 0px 32px 0 0;
+}
+
+#boutons-filtre{
+  display: flex;
 }
 
 .bouton{
@@ -291,25 +299,33 @@ i.fa-regular {
 /*médiaQueries*/
 
 
-@media screen  and (max-width:768px) /*mobile*/
- {
-    .bloc{
-      flex-direction: column;
-    }
-
-    .aside{
-      display: flex;
-      flex-direction: row;
-    }   
-
-}
-
-
 @media screen  and (max-width:992px) /*tablette*/
 {
    .bloc{
      flex-direction: column;
    }
+
+   .filter{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+   }
+
+   #boutons-filtre{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 17px 14px;
+   }
+
+   .bouton{
+    width: calc(50% - 8px);
+    margin: 0;
+    box-sizing: border-box;
+   }
+
+  .bouton:not(:last-child) {
+    margin-right: 0;
+  }
    .pop{
     flex-direction: row;
    }
@@ -336,8 +352,113 @@ i.fa-regular {
     width: 33%;
    }
 
+   .card-cote .image{
+    width: 106px;
+    min-width: auto;
+   }
+
    .activite-card .image{
     height: 267px;
    }
 
   }
+
+
+@media screen  and (max-width:768px) /*mobile*/
+ {
+    .mobile-no-margin{
+      margin-left: -20px;
+      margin-right: -20px;
+    }
+
+    body{
+      padding: 0;
+    }
+
+    main{
+      padding: 0 20px;
+    }
+ 
+
+    form p{
+      display: none;
+    }
+
+    form p#icon{
+      display:block;
+    }
+
+    form p#icon i{
+      color: white;
+    }
+
+    .filter h3{
+      margin: 0;
+      margin-bottom: 15px;
+    }
+
+    .bouton{
+      font-size: 11px;
+    }
+    
+    section{
+      margin-bottom: auto;
+    }
+    .bloc{
+      flex-direction: column-reverse;
+    }
+    .bloc .populaire {
+      width: 100%;
+    }
+
+    .bloc .hebergement .card{
+      width: 100%;
+    }
+
+    .all-card{
+      justify-content: center
+    }
+
+    .aside{
+      display: flex;
+      flex-direction: column;
+    }  
+
+  
+    aside.bg-gray{
+      border-radius: 0;
+    }
+
+    #card{
+      background-color: transparent;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+   .hebergement.bg-gray{
+      background-color: transparent;
+    }
+
+    .card-cote{
+      max-width:none;
+      width: auto;
+    }
+
+    .affiche-plus{
+      display: none;
+    }
+
+
+    .activites{
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .activite-card{
+      width: 100%;
+      margin-bottom: 24px;
+      margin-right: 0 !important;
+    }
+
+}
+
