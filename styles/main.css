@@ -5,17 +5,15 @@ body {
   margin: 0 auto;
   padding: 0 50px;
   max-width: 1440px;
-
 }
 
 .bg-gray {
   background-color: #f2f2f2;
 }
 
-h2{
+h2 {
   margin-bottom: 0px;
 }
-
 
 form {
   display: flex;
@@ -29,7 +27,7 @@ form input {
   border: none;
   border-top: 1px solid #f2f2f2;
   border-bottom: 1px solid #f2f2f2;
-  
+
   padding: 10px;
   font-weight: 700;
 }
@@ -51,26 +49,26 @@ form p {
   border-radius: 0px 15px 15px 0px;
 }
 
-form p#icon{
+form p#icon {
   display: none;
 }
 
-.filter{
-  margin: 20px auto; 
+.filter {
+  margin: 20px auto;
   display: flex;
   align-items: center;
 }
 
-.filter h3{
+.filter h3 {
   margin: 0px 32px 0 0;
 }
 
-#boutons-filtre{
+#boutons-filtre {
   display: flex;
 }
 
-.bouton{
-  border: 2px solid #D9D9D9 ;
+.bouton {
+  border: 2px solid #d9d9d9;
   border-radius: 25px;
   font-weight: 700;
   font-size: 17px;
@@ -81,47 +79,46 @@ form p#icon{
   align-items: center;
   padding: 10px 20px;
   cursor: pointer;
-  transition: background .3s;
+  transition: background 0.3s;
 }
 
-.bouton i{
+.bouton i {
   margin-right: 5px;
 }
 
-.bouton:hover{
-  background: #DEEBFF;
+.bouton:hover {
+  background: #deebff;
 }
 
-.bouton:not(:last-child){
+.bouton:not(:last-child) {
   margin-right: 36px;
 }
 
-.info{
+.info {
   margin: 40px auto;
 }
 
-.info i{
+.info i {
   height: 24px;
   width: 24px;
-  border: 1px solid #D9D9D9;
+  border: 1px solid #d9d9d9;
   border-radius: 50%;
- text-align: center;
- line-height: 24px;
+  text-align: center;
+  line-height: 24px;
 }
-
 
 .bloc {
   display: flex;
 }
 
-#card{
+#card {
   background-color: #f2f2f2;
   border-radius: 15px;
   width: 100%;
   padding: 42px 40px 46px 40px;
 }
 
-.bloc #card h3{
+.bloc #card h3 {
   margin-top: 0px;
 }
 
@@ -147,40 +144,41 @@ form p#icon{
   padding: 5px;
   min-width: 246px;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-  
 }
 
-.texte h4, .texte p ,.texte div{
+.texte h4,
+.texte p,
+.texte div {
   margin: 5px 0px 2px 10px;
 }
 
-
-.activite-card .image , .card .image , .card-cote .image{
+.activite-card .image,
+.card .image,
+.card-cote .image {
   height: 200px;
   width: 100%;
   background-position: center;
   background-size: cover;
 }
 
-.all-card{
-display: flex;
-flex-wrap: wrap;
-justify-content: space-between;
+.all-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.all-card .image{
+.all-card .image {
   border-radius: 20px 20px 0px 0px;
-  
+  object-fit: cover;
   height: 124px;
 }
 
-.affiche-plus{
+.affiche-plus {
   font-weight: 700;
   margin-top: 10px;
 }
 
-
-aside.bg-gray{
+aside.bg-gray {
   display: flex;
   align-items: stretch;
   margin-left: 40px;
@@ -189,20 +187,18 @@ aside.bg-gray{
   min-width: 420px;
   padding: 41px 40px 0px 37px;
 }
-  
 
-.pop{
+.pop {
   display: flex;
   margin-bottom: 26px;
   justify-content: space-between;
-
 }
 
-.pop i{
+.pop i {
   margin-top: 4px;
 }
 
-.pop h3{
+.pop h3 {
   margin: 0px;
 }
 
@@ -217,68 +213,74 @@ aside.bg-gray{
   min-height: 144px;
 }
 
-
-.card-cote  .image{
+.card-cote .image {
   border-radius: 20px 0 0px 20px;
   width: 137px;
-  height: auto ;
+  height: 144px;
+  object-fit: cover;
   margin-right: 10px;
   min-width: 137px;
 }
 
-.text{
+.card-cote .text p span:first-child{
+  display: block;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 8px;
+}
+
+.text {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-span h4{
+span h4 {
   margin-top: 11px;
   margin-bottom: 7px;
 }
 
-span p{
+span p {
   margin-top: 0;
 }
 
-.activites{
+.activites {
   display: flex;
   justify-content: space-between;
 }
 
-.activite-card{
+.activite-card {
   filter: drop-shadow(0px 3px 15px rgba(204, 50, 50, 0.1));
   width: 25%;
 }
 
-.activite-card:not(:last-child){
+.activite-card:not(:last-child) {
   margin-right: 43px;
 }
 
-#activites{
+#activites {
   margin: 60px 0 60px 0;
-
 }
 
-.activites .image{
+.activites .image {
   height: 425px;
   width: 100%;
   border-radius: 20px;
   background-position: center;
   background-size: cover;
-
 }
 
-.nom-activite{
-  border-radius: 0 0 20px 20px ;
-  background-color: #FFFFFF;
+.nom-activite {
+  border-radius: 0 0 20px 20px;
+  background-color: #ffffff;
   position: absolute;
   height: 56px;
   width: 100%;
   bottom: -1px;
 }
 
-.nom{
+.nom {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -298,167 +300,183 @@ i.fa-regular {
 
 /*médiaQueries*/
 
-
-@media screen  and (max-width:992px) /*tablette*/
-{
-   .bloc{
-     flex-direction: column;
-   }
-
-   .filter{
-    display: flex;
+@media screen and (max-width: 992px) /*tablette*/ {
+  .bloc {
     flex-direction: column;
-    align-items: flex-start;
-   }
+  }
 
-   #boutons-filtre{
+  .filter {
+    display: flex;
+  }
+
+  #boutons-filtre {
     display: flex;
     flex-wrap: wrap;
     gap: 17px 14px;
-   }
+  }
 
-   .bouton{
-    width: calc(50% - 8px);
+  .bouton {
     margin: 0;
     box-sizing: border-box;
-   }
+  }
 
   .bouton:not(:last-child) {
     margin-right: 0;
   }
-   .pop{
+  .pop {
     flex-direction: row;
-   }
+  }
 
-   #card{
+  #card {
     width: auto;
     margin-bottom: 53px;
-   }
+  }
 
-   aside.bg-gray{
+  aside.bg-gray {
     width: auto;
     min-width: auto;
     margin-left: 0px;
-   }
-
-   .aside{
-     display: flex;
-     gap: 23px;
-     
-   }
-
-   .card-cote{
-    max-width: 33%;
-    width: 33%;
-   }
-
-   .card-cote .image{
-    width: 106px;
-    min-width: auto;
-   }
-
-   .activite-card .image{
-    height: 267px;
-   }
-
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
+  .aside {
+    display: flex;
+    gap: 23px;
+  }
 
-@media screen  and (max-width:768px) /*mobile*/
- {
-    .mobile-no-margin{
-      margin-left: -20px;
-      margin-right: -20px;
-    }
+  .card-cote {
+    max-width: 33%;
+    width: 33%;
+  }
 
-    body{
-      padding: 0;
-    }
+  .card-cote .image {
+    width: 106px;
+    min-width: auto;
+    height: 100%;
+  }
 
-    main{
-      padding: 0 20px;
-    }
- 
-
-    form p{
-      display: none;
-    }
-
-    form p#icon{
-      display:block;
-    }
-
-    form p#icon i{
-      color: white;
-    }
-
-    .filter h3{
-      margin: 0;
-      margin-bottom: 15px;
-    }
-
-    .bouton{
-      font-size: 11px;
-    }
-    
-    section{
-      margin-bottom: auto;
-    }
-    .bloc{
-      flex-direction: column-reverse;
-    }
-    .bloc .populaire {
-      width: 100%;
-    }
-
-    .bloc .hebergement .card{
-      width: 100%;
-    }
-
-    .all-card{
-      justify-content: center
-    }
-
-    .aside{
-      display: flex;
-      flex-direction: column;
-    }  
-
-  
-    aside.bg-gray{
-      border-radius: 0;
-    }
-
-    #card{
-      background-color: transparent;
-      margin-bottom: 0;
-      padding-bottom: 0;
-    }
-
-   .hebergement.bg-gray{
-      background-color: transparent;
-    }
-
-    .card-cote{
-      max-width:none;
-      width: auto;
-    }
-
-    .affiche-plus{
-      display: none;
-    }
-
-
-    .activites{
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .activite-card{
-      width: 100%;
-      margin-bottom: 24px;
-      margin-right: 0 !important;
-    }
-
+  .activite-card .image {
+    height: 267px;
+  }
 }
 
+@media screen and (max-width: 768px) /*mobile*/ {
+  .mobile-no-margin {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+
+  body {
+    padding: 0;
+  }
+
+  main {
+    padding: 0 20px;
+  }
+
+  form p {
+    display: none;
+  }
+
+  form p#icon {
+    display: block;
+  }
+
+  form p#icon i {
+    color: white;
+  }
+
+  .filter {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .filter #boutons-filtre {
+    width: 100%;
+  }
+
+  .filter #boutons-filtre .bouton {
+    width: calc(50% - 8px);
+    justify-content: flex-start;
+    padding-top: 13px;
+    padding-bottom: 13px;
+  }
+
+  .filter #boutons-filtre .bouton i {
+    font-size: 21px;
+  }
+
+  .filter h3 {
+    margin: 0;
+    margin-bottom: 15px;
+  }
+
+  .bouton {
+    font-size: 11px;
+  }
+
+  section {
+    margin-bottom: auto;
+  }
+  .bloc {
+    flex-direction: column-reverse;
+  }
+  .bloc .populaire {
+    width: 100%;
+  }
+
+  .bloc .hebergement .card {
+    width: 100%;
+  }
+
+  .all-card {
+    justify-content: center;
+  }
+
+  .aside {
+    display: flex;
+    flex-direction: column;
+  }
+
+  aside.bg-gray {
+    border-radius: 0;
+  }
+
+  #card {
+    background-color: transparent;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .hebergement.bg-gray {
+    background-color: transparent;
+  }
+
+  .card-cote {
+    max-width: none;
+    width: auto;
+  }
+
+  .card-cote .image {
+    width: 137px;
+    height: 144px;
+  }
+
+  .affiche-plus {
+    display: none;
+  }
+
+  .activites {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .activite-card {
+    width: 100%;
+    margin-bottom: 24px;
+    margin-right: 0 !important;
+  }
+}
